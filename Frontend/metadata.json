@@ -1,0 +1,5 @@
+
+{
+  "name": "Water Quality Prediction",
+  "description": "A web application to predict water quality based on various chemical and physical parameters. Features user authentication, a prediction engine interface, and an informational chatbot."
+}

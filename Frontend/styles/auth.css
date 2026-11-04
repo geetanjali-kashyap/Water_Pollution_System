@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #ebf5ff, #ffffff, #f0f9ff);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(59, 130, 246, 0.1), rgba(6, 182, 212, 0.1), rgba(20, 184, 166, 0.1));
+  filter: blur(3rem);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.form-container {
+  position: relative;
+  width: 850px;
+  height: 550px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(203, 213, 225, 0.5);
+  z-index: 1;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form-box {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+  z-index: 1;
+}
+
+.form-content {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.auth-title {
+  font-size: 2.5rem;
+  margin: -10px 0 30px;
+  font-weight: 800;
+  background: linear-gradient(to right, #2563eb, #0891b2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  margin: 30px 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 13px 50px 13px 20px;
+  background: rgba(241, 245, 249, 0.8);
+  border-radius: 1rem;
+  border: 1px solid rgba(203, 213, 225, 0.5);
+  outline: none;
+  font-size: 16px;
+  color: #1e293b;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.1);
+}
+
+.input-field::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.input-field.invalid {
+  border-color: #f43f5e;
+  background: rgba(254, 242, 242, 0.8);
+}
+
+.input-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #64748b;
+  transition: color 0.3s ease;
+}
+
+.input-group:focus-within .input-icon {
+  color: #3b82f6;
+}
+
+.auth-btn {
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(to right, #2563eb, #0891b2);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.1), 0 2px 4px -1px rgba(37, 99, 235, 0.06);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2), 0 4px 6px -2px rgba(37, 99, 235, 0.1);
+}
+
+.auth-btn:active {
+  transform: translateY(1px);
+}
+
+.social-section {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.social-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, 
+    rgba(203, 213, 225, 0), 
+    rgba(203, 213, 225, 0.5), 
+    rgba(203, 213, 225, 0)
+  );
+}
+
+.social-text {
+  font-size: 0.875rem;
+  margin: 1rem 0;
+  color: #64748b;
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0 1rem;
+  display: inline-block;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  padding: 0.75rem;
+  background: white;
+  border: 1px solid rgba(203, 213, 225, 0.5);
+  font-size: 1.25rem;
+  color: #64748b;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.social-icon:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+}
+
+.social-icon:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  color: #e11d48;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  background: rgba(254, 242, 242, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(225, 29, 72, 0.2);
+}
+
+.success-message {
+  color: #059669;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  background: rgba(236, 253, 245, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(5, 150, 105, 0.2);
+}
+
+.forgot-link {
+  text-align: right;
+  margin: -0.5rem 0 1.5rem;
+}
+
+.forgot-link a {
+  color: #3b82f6;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-link a:hover {
+  color: #1d4ed8;
+}
+
+@media screen and (max-width: 650px) {
+  .form-container {
+    height: auto;
+    min-height: calc(100vh - 40px);
+    width: 90%;
+    margin: 1rem;
+  }
+  
+  .form-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .auth-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .auth-title {
+    font-size: 1.75rem;
+  }
+
+  .form-box {
+    padding: 1.5rem 1rem;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  min-height: 100px;
+  max-height: 150px;
+  /* background: rgba(0, 119, 255, 0.4); */
+}
+
+.parallax > use {
+  animation: moveWaves 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+@keyframes moveWaves {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+
+/* [ Box ]
+  Image (slide from left or right)
+  Title (River Water Prediction)
+  Short description
+  Parameters list with short lines
+[/ Box] */
