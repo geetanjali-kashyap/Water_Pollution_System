@@ -28,7 +28,7 @@
 
 | Member | Role | Email |
 |--------|------|-------|
-| Dr. Jyoti Tripati | Mentor | xyz@gmail.com |
+| Dr. Sumit Singh | Mentor | xyz@gmail.com |
 | Hardik  |Frontend | xyz@gmail.com |
 | Geetanjali | Backend & ML Developer | Geetanjalikashyap3456@gmail.com |
 | Hanshika | Frontend | xyz@gmail.com |
