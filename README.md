@@ -28,11 +28,11 @@
 
 | Member | Role | Email |
 |--------|------|-------|
-| Dr. Jyoti Tripati | Mentor | jyoti.tripathi@dseu.ac.in |
-| Ambuj Kumar Singh  |Frontend | ambujks2002@gmail.com |
-| Chetan | Backend & ML Developer | Chetankashyap951@gmail.com |
-| Shivam Sahu | Frontend | 26shivam10@gmail.com |
-| Shravan | Backend & ML Developer | mandalshravan2004@gmail.com |
+| Dr. Jyoti Tripati | Mentor | xyz@gmail.com |
+| Hardik  |Frontend | xyz@gmail.com |
+| Geetanjali | Backend & ML Developer | Geetanjalikashyap3456@gmail.com |
+| Hanshika | Frontend | xyz@gmail.com |
+| Gourav | Backend & ML Developer | xyz@gmail.com |
 
 
 ---
@@ -293,14 +293,14 @@ Before starting, make sure you have installed:
  
     - DB_USERNAME=root
     - DB_PASSWORD=yourpassword
-    - DB_NAME=sqlalchemy  (Database Name)
+    - DB_NAME=Water_pollution_system  (Database Name)
     - DB_HOST=localhost
     - DB_PORT=3306
 
 - ------------- SMTP Configuration ----------
-    - SECRET_KEY=yourSecretKeyHere
+    - SECRET_KEY=yourSecretKeyHere   (any character)
     - MAIL_USERNAME=yourEmail@gmail.com
-    - MAIL_PASSWORD=yourEmailAppPassword
+    - MAIL_PASSWORD=yourEmailAppPassword   (create by using your E-Mail)
     - MAIL_SERVER=smtp.gmail.com
     - MAIL_PORT=587
     - MAIL_USE_TLS=True
